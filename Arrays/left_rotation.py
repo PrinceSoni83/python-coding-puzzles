@@ -16,4 +16,16 @@ def rotLeft(a , d):
 userArray = [1,2,3,4,5]
 print(rotLeft(userArray,2))
 
+###### Optimised solution #######
 
+def rotLeft1(a,d):
+    l = len(a)
+    tempArr1 = []
+    newIndex = 0
+    for i in range(0,l):
+        newIndex = (i+d) % l
+        tempArr1.append(a[newIndex])
+    return tempArr1
+
+userArray1 = [1,2,3,4,5]
+print(rotLeft1(userArray1,2))
