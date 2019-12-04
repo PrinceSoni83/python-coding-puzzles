@@ -1,14 +1,13 @@
-input = input("Enter comma seperated values: ")
-defArr = input.split(",")
-for i in range(0,len(defArr)-1):
-    for j in range(i,len(defArr)-1):
-        swap = True
-        temp = 0
-        if defArr[j] > defArr[j+1]:
-            temp = defArr[j]
-            defArr[j] = defArr[j+1]
-            defArr[j+1] = defArr[j]
-            swap = False
-        if(not swap):
-            break
-print(defArr)
+def bubbleSort(list):
+    for i in range(len(list)-1,0,-1):
+        for j in range(i):
+            if list[j] > list[j+1]:
+                temp = list[j]
+                list[j] = list[j+1]
+                list[j+1] = temp
+    print(list)
+
+userArray = [14,46,43,27,57,41,45,21,70,1] 
+bubbleSort(userArray)
+
+

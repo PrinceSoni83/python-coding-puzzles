@@ -5,4 +5,4 @@ def fact(n):
         return n * fact(n-1)
         
 user_input = input("Enter the number for factorial: ")
-print("Recurcive value: ", fact(int(user_input)))
+print("Recursive value: ", fact(int(user_input)))
