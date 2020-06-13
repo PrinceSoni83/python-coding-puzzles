@@ -12,4 +12,4 @@ def solution(A,N):
 
   return counters
 
-print (solution([3,4,4,6,1,4,4],5)) 
+print (solution([3,4,4,6,1,4,4],5))

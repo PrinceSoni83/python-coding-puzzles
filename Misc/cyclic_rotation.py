@@ -7,4 +7,3 @@ def rotation(A,K):
   return result
 
 print(rotation([1,2,3,4,5],3))
-
